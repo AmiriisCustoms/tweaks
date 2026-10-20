@@ -6,14 +6,14 @@ Codename: ios
 Architectures: iphoneos-arm iphoneos-arm64
 Components: main
 Description: Amirii's Customs jailbreak tweaks
-Date: Tue, 20 Oct 2026 20:34:09 UTC
+Date: Tue, 20 Oct 2026 20:39:25 UTC
 MD5Sum:
- 107ec5c660d9669cf2e5478473d3be47 4110 Packages
- 48a7689cd85fa6ce45c2b9cc39e3c224 1135 Packages.gz
- 93fc324a2ca46fc6166ff63c825719fc 1320 Packages.bz2
- 87b2f47aab9951c4a396b503e309f792 1176 Packages.xz
+ 407ece7791a0dba7c96f62c14b62d097 4110 Packages
+ b323a54068e6a3eb4ae8c2a070ec9080 1137 Packages.gz
+ 34769d6c0f176af7035ee510ecebaa10 1320 Packages.bz2
+ 5ef68e791eb4922870960553819f4cf1 1172 Packages.xz
 SHA256:
- 5b3bfc8f742561e1ecfef602be48b9470ef5dbedc90b6e427fb64b732998ddfb 4110 Packages
- f09848ae67c0d94ecfcec5090e92abbec70d2da281b827fc74c1c273059cb87c 1135 Packages.gz
- d38cc27b548c8a85e056ba3333c5bfaf4a50ba3e04e77321881878c6f197c01e 1320 Packages.bz2
- 46d2550478b633a76623cd6a5de8c30562b990e1bff2e5d9e319bcb579b3aa2a 1176 Packages.xz
+ 3a2101e65cf600f8429f8cc77f557859aa19000d8f04d6a17e1cb8f249c64f20 4110 Packages
+ 25f9197cd6756ea6505997ea0f3dfcb322732ef9174fffb77bc3d0f3b67757b1 1137 Packages.gz
+ 2988e48b2ef7daef044d8c62f4a8a4cf510a567e52c3f2833cd5a0869e3c7f6c 1320 Packages.bz2
+ 9498f99a060affbf80f86d7f02d074362bea2009fe086677451881c99fb9bbbc 1172 Packages.xz

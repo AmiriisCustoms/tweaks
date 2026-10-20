@@ -53,10 +53,10 @@ Homepage: https://github.com/AmiriisCustoms/tweaks
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 10.0)
 Installed-Size: 440
 Filename: debs/com.amirii.silencedhomebutton_1.0.1_iphoneos-arm.deb
-Size: 126146
-MD5sum: 69e4944ba61d18bcaf889cb5a93fb295
-SHA1: 7d4a39d3a2b1e87be1ec9276ba45e40275f3dcde
-SHA256: 3d38ce9ae20b641a8be23d259b46004e47aa32b2684fe22b2248cd88a368d322
+Size: 126152
+MD5sum: 1effb9dbdf278cb7b1fd0f36d455ed39
+SHA1: c181d066a29648a2a80ea5075ea490ac11827d60
+SHA256: e017f2dd8467aaecce7c9a2721127501dac7afe2824bd7b661e58ef9603866dc
 
 Package: com.amirii.silencedhomebutton
 Name: Silenced Home Button
@@ -73,7 +73,7 @@ Architecture: iphoneos-arm64
 Version: 1.0.1
 Installed-Size: 460
 Filename: debs/com.amirii.silencedhomebutton_1.0.1_iphoneos-arm64.deb
-Size: 117316
-MD5sum: 90add9c431fade43984e5b9d903c9e6f
-SHA1: 029c9724d6f30f0220030f59d6abe1638d0d026f
-SHA256: 9bda233097a029cf21218f0dcfc51ead9330fa76c9bfc68be475b3c1f4d53fa4
+Size: 117290
+MD5sum: 15d0c68ae34c3f26ec960a64839a1269
+SHA1: ed5f84000c5c9d06db1eae597dc559e77c38f6d2
+SHA256: 20b25ce2033d0f9c4a518ec67f9a66acb6221a9124b35651e7b649911ce5efb0
