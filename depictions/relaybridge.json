@@ -84,7 +84,7 @@
     {
      "class": "DepictionTableTextView",
      "title": "Version",
-     "text": "1.2.5 beta 3"
+     "text": "1.2.5 beta 4"
     },
     {
      "class": "DepictionTableButtonView",
@@ -112,6 +112,15 @@
    "tabname": "Changelog",
    "class": "DepictionStackView",
    "views": [
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.2.5 beta 4",
+     "useBoldText": true
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "New RelayBridge icon in Settings and on the repo. Moved to the shared Amirii's Customs repo: https://amiriiscustoms.github.io/tweaks/"
+    },
     {
      "class": "DepictionSubheaderView",
      "title": "1.2.5 beta 3",
