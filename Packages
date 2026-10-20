@@ -6,17 +6,17 @@ Description: Use this iPhone as a Continuity relay device: send and receive SMS 
 Maintainer: Amirii's Customs
 Author: Amirii's Customs
 Section: Tweaks
-Icon: https://amiriiscustoms.github.io/tweaks/assets/icon.png
+Icon: https://amiriiscustoms.github.io/tweaks/assets/relaybridge-icon.png
 Depiction: https://amiriiscustoms.github.io/tweaks/depictions/relaybridge.html
 SileoDepiction: https://amiriiscustoms.github.io/tweaks/depictions/relaybridge.json
 Homepage: https://github.com/AmiriisCustoms/tweaks
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 8.1)
 Installed-Size: 664
 Filename: debs/com.amirii.relaybridge_1.2.5~beta3_iphoneos-arm.deb
-Size: 237468
-MD5sum: 8d201e8bb3e3a0edf3817b05dd9539b4
-SHA1: aedc6b0415a1f9ff9595d8c17f8563e75dd2ec0e
-SHA256: 65bceaa402adf930773dc331c3c7f2eda895bd4d105c472b55457b54fe7fe5d0
+Size: 237462
+MD5sum: 015b5f33ff51d213ad019ba9adfd9b70
+SHA1: ad9ec15ee395e2d034a58342c147f4c02231cdd0
+SHA256: 7bf551a4cec6c5bb3b0f7c2d71d209309f85105999ab065ffd226800543513dc
 
 Package: com.amirii.relaybridge
 Name: RelayBridge4iOS
@@ -24,7 +24,7 @@ Description: Use this iPhone as a Continuity relay device: send and receive SMS 
 Maintainer: Amirii's Customs
 Author: Amirii's Customs
 Section: Tweaks
-Icon: https://amiriiscustoms.github.io/tweaks/assets/icon.png
+Icon: https://amiriiscustoms.github.io/tweaks/assets/relaybridge-icon.png
 Depiction: https://amiriiscustoms.github.io/tweaks/depictions/relaybridge.html
 SileoDepiction: https://amiriiscustoms.github.io/tweaks/depictions/relaybridge.json
 Homepage: https://github.com/AmiriisCustoms/tweaks
@@ -33,10 +33,10 @@ Architecture: iphoneos-arm64
 Version: 1.2.5~beta3
 Installed-Size: 556
 Filename: debs/com.amirii.relaybridge_1.2.5~beta3_iphoneos-arm64.deb
-Size: 210890
-MD5sum: 2ead0b14d542e40cb56de99740e1fa8b
-SHA1: 83d80a432dcc51831c84dd428bd69ff00757981e
-SHA256: 01af74959cc3fb30470f672b2f470599ff18bc341b6938212a5daa48e1b37e38
+Size: 210860
+MD5sum: 82856bfd417650a104b67c41efda94b1
+SHA1: a335c984500647c31491c24a3764cf9f3fb29ca6
+SHA256: f9ca0828ce11396ef98edd07626c0f1aeaf837363c769a88601bd43285a5ae08
 
 Package: com.amirii.silencedhomebutton
 Name: Silenced Home Button
