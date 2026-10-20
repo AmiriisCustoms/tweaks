@@ -78,7 +78,7 @@
     {
      "class": "DepictionTableTextView",
      "title": "Version",
-     "text": "1.0.1"
+     "text": "1.0.2"
     },
     {
      "class": "DepictionTableButtonView",
@@ -106,6 +106,15 @@
    "tabname": "Changelog",
    "class": "DepictionStackView",
    "views": [
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.0.2",
+     "useBoldText": true
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Adds the Silenced Home Button icon next to its entry in Settings."
+    },
     {
      "class": "DepictionSubheaderView",
      "title": "1.0.1",
