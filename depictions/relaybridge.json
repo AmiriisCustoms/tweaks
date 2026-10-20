@@ -10,7 +10,7 @@
    "views": [
     {
      "class": "DepictionMarkdownView",
-     "markdown": "**RelayBridge4iOS** turns a spare jailbroken iPhone into a Continuity relay device — like an iPad or Mac. Your main (non‑jailbroken) iPhone forwards **SMS** and **phone calls** to it, and iMessage keeps working normally.\n\n**Works**\n- Send & receive SMS (green bubble) through your main iPhone\n- Receive MMS picture texts\n- Make & receive phone calls through your main iPhone\n- iMessage and FaceTime, including photos\n\n**Not supported**\n- Sending MMS picture texts (send pictures over iMessage instead)\n- Moving a call that's already in progress from your main iPhone\n",
+     "markdown": "**RelayBridge4iOS** turns a spare jailbroken iPhone into a Continuity relay device — like an iPad or Mac. Your main (non‑jailbroken) iPhone forwards **SMS** and **phone calls** to it, and iMessage keeps working normally.\n\n**Works**\n- Send & receive SMS (green bubble) through your main iPhone\n- Receive MMS picture texts\n- Make & receive phone calls through your main iPhone\n- iMessage and FaceTime, including photos\n- Move a call in progress from your main iPhone to this iPhone (Call Handoff)\n- AirDrop keeps working normally\n\n**Not supported**\n- Sending MMS picture texts (send pictures over iMessage instead)\n- Call Handoff only lists this iPhone while its screen is awake (incoming calls still ring normally)\n",
      "useSpacing": true
     },
     {
@@ -29,11 +29,19 @@
     {
      "class": "DepictionScreenshotsView",
      "itemCornerRadius": 8,
-     "itemSize": "{160, 194}",
+     "itemSize": "{160, 290}",
      "screenshots": [
       {
-       "url": "https://amiriiscustoms.github.io/tweaks/assets/screenshot-settings.png",
+       "url": "https://amiriiscustoms.github.io/tweaks/assets/screenshot-settings.jpg",
        "accessibilityText": "RelayBridge4iOS settings"
+      },
+      {
+       "url": "https://amiriiscustoms.github.io/tweaks/assets/screenshot-call-handoff.jpg",
+       "accessibilityText": "Moving a call to the jailbroken iPhone"
+      },
+      {
+       "url": "https://amiriiscustoms.github.io/tweaks/assets/screenshot-calls-other-devices.jpg",
+       "accessibilityText": "Calls on Other Devices on the main iPhone"
       }
      ]
     },
@@ -46,7 +54,7 @@
     },
     {
      "class": "DepictionMarkdownView",
-     "markdown": "1. Remove the SIM from the jailbroken iPhone.\n2. Install RelayBridge4iOS.\n3. Settings → Messages: turn iMessage off, then on.\n4. Settings → FaceTime: turn FaceTime off, then on (same Apple ID as your main iPhone).\n5. On your main iPhone: Settings → Messages → Text Message Forwarding → turn on this iPhone, and Settings → Phone → Calls on Other Devices → Allow → turn on this iPhone.\n\nSettings → RelayBridge4iOS has an on/off switch and a Restart Relay Services button.\n\n**Optional (beta):** once this iPhone shows up under Text Message Forwarding on your main iPhone, turn on **AirDrop Fix** in Settings → RelayBridge4iOS.",
+     "markdown": "1. Remove the SIM from the jailbroken iPhone.\n2. Install RelayBridge4iOS.\n3. Settings → Messages: turn iMessage off, then on.\n4. Settings → FaceTime: turn FaceTime off, then on (same Apple ID as your main iPhone).\n5. On your main iPhone: Settings → Messages → Text Message Forwarding → turn on this iPhone, and Settings → Phone → Calls on Other Devices → Allow → turn on this iPhone.\n\nSettings → RelayBridge4iOS has an on/off switch and a Restart Relay Services button.\n\nDo steps 3–5 within 30 minutes of installing. After that, AirDrop protection turns on by itself. Call Handoff is always on.",
      "useSpacing": true
     },
     {
@@ -84,7 +92,7 @@
     {
      "class": "DepictionTableTextView",
      "title": "Version",
-     "text": "1.2.5 beta 4"
+     "text": "1.2.6"
     },
     {
      "class": "DepictionTableButtonView",
@@ -112,6 +120,15 @@
    "tabname": "Changelog",
    "class": "DepictionStackView",
    "views": [
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.2.6",
+     "useBoldText": true
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Call Handoff and AirDrop protection are now built in and always on; the beta switches are gone. RelayBridge spoofs the identity service only during a 30-minute setup window after install, so AirDrop keeps working afterwards. New Settings and repo icon. Moved to the shared Amirii's Customs repo."
+    },
     {
      "class": "DepictionSubheaderView",
      "title": "1.2.5 beta 4",

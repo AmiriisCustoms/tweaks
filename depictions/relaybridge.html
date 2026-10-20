@@ -20,7 +20,8 @@
   li { margin:4px 0; }
   .ok li::marker { color:var(--green); }
   .no li::marker { color:#d9534f; }
-  .shot { display:block; width:100%; max-width:300px; border-radius:10px; border:1px solid var(--line); margin:4px auto 0; }
+  .shots { display:grid; gap:12px; margin-top:8px; }
+  .shot { display:block; width:100%; max-width:300px; border-radius:10px; border:1px solid var(--line); margin:0 auto; }
   .log b { color:var(--green); }
   .log p { margin:6px 0; }
   a { color:var(--green); }
@@ -33,7 +34,7 @@
   <div class="banner"><img src="../assets/banner.png" alt="Amirii's Customs"></div>
   <main>
     <h1>RelayBridge4iOS</h1>
-    <p class="by">by Amirii's Customs™ · version 1.2.5 beta 4</p>
+    <p class="by">by Amirii's Customs™ · version 1.2.6</p>
 
     <div class="card">
       <p style="margin:0">Turns a spare jailbroken iPhone into a Continuity relay device, like an iPad or Mac. Your main iPhone forwards SMS and phone calls to it, and iMessage keeps working normally.</p>
@@ -49,6 +50,8 @@
         <li>Receive MMS picture texts</li>
         <li>Make and receive phone calls through your main iPhone</li>
         <li>iMessage and FaceTime, including photos</li>
+        <li>Move a call in progress from your main iPhone to this iPhone (Call Handoff)</li>
+        <li>AirDrop keeps working normally</li>
       </ul>
     </div>
 
@@ -56,7 +59,7 @@
       <h2>Not supported</h2>
       <ul class="no">
         <li>Sending MMS picture texts (send pictures over iMessage instead)</li>
-        <li>Moving a call in progress from your main iPhone is experimental (Call Handoff switch, beta)</li>
+        <li>Call Handoff only lists this iPhone while its screen is awake (incoming calls still ring normally)</li>
         <li>Calls relay only when both phones are on the same Wi-Fi (texts relay anywhere)</li>
       </ul>
     </div>
@@ -69,9 +72,13 @@
         <li>Settings → Messages: turn iMessage off, then on.</li>
         <li>Settings → FaceTime: turn FaceTime off, then on (same Apple ID as your main iPhone).</li>
         <li>On your main iPhone: Messages → Text Message Forwarding → turn on this iPhone, and Phone → Calls on Other Devices → Allow → turn on this iPhone.</li>
-        <li>Optional (beta): Settings → RelayBridge4iOS → turn on <b>AirDrop Fix</b>.</li>
+        <li>Do steps 3–5 within 30 minutes of installing. After that, AirDrop protection turns on by itself.</li>
       </ol>
-      <img class="shot" src="../assets/screenshot-settings.png" alt="RelayBridge4iOS settings page">
+      <div class="shots">
+        <img class="shot" src="../assets/screenshot-settings.jpg" alt="RelayBridge4iOS settings page">
+        <img class="shot" src="../assets/screenshot-calls-other-devices.jpg" alt="Main iPhone: Calls on Other Devices with the jailbroken iPhone listed">
+        <img class="shot" src="../assets/screenshot-call-handoff.jpg" alt="Main iPhone: moving a call to the jailbroken iPhone">
+      </div>
     </div>
 
     <div class="card">
@@ -99,6 +106,7 @@
 
     <div class="card log">
       <h2>Changelog</h2>
+      <p><b>1.2.6</b> Call Handoff and AirDrop protection are now built in and always on; the beta switches are gone. RelayBridge spoofs the identity service only during a 30-minute setup window after install, so AirDrop keeps working afterwards. New Settings and repo icon. Moved to the shared Amirii's Customs repo.</p>
       <p><b>1.2.5 beta 4</b> New RelayBridge icon in Settings and on the repo. Moved to the shared Amirii's Customs repo (https://amiriiscustoms.github.io/tweaks/).</p>
       <p><b>1.2.5 beta 3</b> Now built for iOS 8.1 through 26.0.1: new rootful package for iOS 8.1 – 14 (including 32-bit iPhone 4S/5/5c), rootless package for iOS 15 – 26.0.1. Fixed a likely hooking problem on iPhone XS and newer. Very old jailbreaks without <code>killall</code> get a reboot prompt instead of a failed install. Only iOS 16 has been tested so far; please report other versions.</p>
       <p><b>1.2.5 beta 1</b> New Beta Options in Settings, both off by default. <b>AirDrop Fix</b> stops RelayBridge from interfering with AirDrop receiving (turn on after this iPhone appears under Text Message Forwarding). <b>Call Handoff (Experimental)</b> lets your main iPhone move a call to this iPhone; moved calls can sound distant on speaker. New terminal commands <code>relaybridge airdropfix on|off</code> and <code>relaybridge handoff on|off</code>.</p>

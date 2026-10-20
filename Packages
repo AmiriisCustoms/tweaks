@@ -1,6 +1,6 @@
 Package: com.amirii.relaybridge
 Name: RelayBridge4iOS
-Version: 1.2.5~beta4
+Version: 1.2.6
 Architecture: iphoneos-arm
 Description: Use this iPhone as a Continuity relay device: send and receive SMS and calls through your main iPhone, like an iPad or Mac. Toggle in Settings > RelayBridge4iOS.
 Maintainer: Amirii's Customs
@@ -12,11 +12,11 @@ SileoDepiction: https://amiriiscustoms.github.io/tweaks/depictions/relaybridge.j
 Homepage: https://github.com/AmiriisCustoms/tweaks
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 8.1)
 Installed-Size: 664
-Filename: debs/com.amirii.relaybridge_1.2.5~beta4_iphoneos-arm.deb
-Size: 238206
-MD5sum: a0176e3423d1459fe266a67c029a4b72
-SHA1: 4b7e6cadb6f8a6ef55130651f6cfba4e8172638c
-SHA256: f7880d4805ccdd0edce5237e421ed4793251302ece17390dacf45a3aff9423c8
+Filename: debs/com.amirii.relaybridge_1.2.6_iphoneos-arm.deb
+Size: 239006
+MD5sum: a544abb0fa030b42b1e5e973baf34fa8
+SHA1: e30a4f2b6fba2728daac8fd072f4be0a9df94a0d
+SHA256: a4a9d4902c18cfbdbf4b11f2aa515e072f6f51ed835c6a7cee01d6d8737f14d7
 
 Package: com.amirii.relaybridge
 Name: RelayBridge4iOS
@@ -30,13 +30,13 @@ SileoDepiction: https://amiriiscustoms.github.io/tweaks/depictions/relaybridge.j
 Homepage: https://github.com/AmiriisCustoms/tweaks
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 15.0)
 Architecture: iphoneos-arm64
-Version: 1.2.5~beta4
+Version: 1.2.6
 Installed-Size: 556
-Filename: debs/com.amirii.relaybridge_1.2.5~beta4_iphoneos-arm64.deb
-Size: 211624
-MD5sum: ecb7d743a5828184d6a17a65e4e840f9
-SHA1: 814d7f068abe151555e481c47a9a932826992143
-SHA256: 028fc4400fd46bae09b37edd3aa0335b9a0ad8d204e687edf37e8ac11b7eb922
+Filename: debs/com.amirii.relaybridge_1.2.6_iphoneos-arm64.deb
+Size: 211990
+MD5sum: c2bfcdcee2b9c58779eb401fe5c95fda
+SHA1: 960a7171e83314bdb476977cb1dfe4e90feb1cee
+SHA256: b49c9dae1fe88ea59c8a9af07a1fe4d9eb8a1c5783b8e878b8fe19f2a3bbb99d
 
 Package: com.amirii.silencedhomebutton
 Name: Silenced Home Button
