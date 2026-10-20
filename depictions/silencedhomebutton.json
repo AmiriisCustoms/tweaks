@@ -1,0 +1,130 @@
+{
+ "minVersion": "0.4",
+ "headerImage": "https://amiriiscustoms.github.io/tweaks/assets/silencedhomebutton-banner.png",
+ "tintColor": "#2E9E44",
+ "class": "DepictionTabView",
+ "tabs": [
+  {
+   "tabname": "Details",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "**Silenced Home Button** mutes the Touch ID home-button **click haptic**. For an iPhone with a solid-state home button whose Taptic Engine rattles, buzzes or is damaged, this stops the home button from making any vibration - while the button still works normally and **Touch ID is unaffected**.\n\nThe button stays fully functional: presses still register and go Home, and Touch ID unlock, Apple Pay and app authentication all behave exactly as before. Only the physical click buzz is removed.",
+     "useSpacing": true
+    },
+    {
+     "class": "DepictionButtonView",
+     "text": "☕ Support on Ko-fi",
+     "action": "https://ko-fi.com/amiriiscustoms",
+     "tintColor": "#FF5E5B"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "How to use"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "1. Install, then do a **respring / userspace reboot** so it loads.\n2. **Settings → Silenced Home Button → On.**\n3. Respring / userspace reboot once more to apply.\n\nTo bring the click back: turn it **Off** and respring. It is **off by default**, so installing it changes nothing until you switch it on.",
+     "useSpacing": true
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "How it works"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "The home-button click is a Taptic actuation that `backboardd` loads from a haptic config. This tweak sets that click's **gain to zero**, so the button keeps a *configured* haptic (iOS never disables the button) but the engine actuates at zero amplitude - silent. Nothing else on the device is touched.",
+     "useSpacing": true
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Privacy & safety"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "- **No network access.** It never connects to the internet or reads any personal data.\n- **One job only.** It changes a single value (the home-button click gain) inside `backboardd`. Touch ID, Face ID logic, passcode and everything else are untouched.\n- **Off by default** and fully reversible - turn it off and respring to restore the normal click.",
+     "useSpacing": true
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Compatibility"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "For devices with a **solid-state (Taptic) home button**: **iPhone 7, 7 Plus, 8, 8 Plus, SE (2nd gen), SE (3rd gen).** Devices with an older mechanical home button (6s and earlier) don't need it.\n\n- **Tested:** iPhone 8 Plus, iOS 16.7, palera1n (rootless).\n- **Rootless package (iOS 15+):** arm64 + arm64e - palera1n, Dopamine. Covers iPhone 8 on iOS 16 and SE 2nd/3rd gen on iOS 15-18.\n- **Rootful package (iOS 10-14):** arm64 + arm64e - Cydia-era, unc0ver, checkra1n, Taurine, Odyssey.\n- Other versions are **expected to work** (same home-button architecture) but are untested - please report.",
+     "useSpacing": true
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Developer",
+     "text": "Amirii's Customs™"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Version",
+     "text": "1.0.1"
+    },
+    {
+     "class": "DepictionTableButtonView",
+     "title": "GitHub",
+     "action": "https://github.com/AmiriisCustoms/tweaks"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionLabelView",
+     "text": "Silenced Home Button™ and Amirii's Customs™ are trademarks of Amirii's Customs. © 2026 Amirii's Customs. All rights reserved. Free for personal use; redistribution or modification is not permitted. Not affiliated with Apple Inc. Apple, iPhone, iOS and Touch ID are trademarks of Apple Inc.",
+     "fontSize": 12,
+     "textColor": "#8e8e93",
+     "margins": "{8,16,8,16}"
+    },
+    {
+     "class": "DepictionTableButtonView",
+     "title": "License",
+     "action": "https://amiriiscustoms.github.io/tweaks/licenses/silencedhomebutton.txt"
+    }
+   ]
+  },
+  {
+   "tabname": "Changelog",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.0.1",
+     "useBoldText": true
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Adds a blue **Respring** button (top right of the settings page) that appears after you flip the switch, so the change applies right away. Repo moved to the shared Amirii's Customs repo: https://amiriiscustoms.github.io/tweaks/"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.0.0",
+     "useBoldText": true
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "First release. Silences the Touch ID home-button click haptic by zeroing its gain, with an on/off switch in Settings. Rootless (iOS 15+) and rootful (iOS 10-14) packages for iPhone 7/7 Plus/8/8 Plus/SE 2nd/3rd gen."
+    }
+   ]
+  }
+ ]
+}

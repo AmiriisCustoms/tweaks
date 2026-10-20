@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Silenced Home Button</title>
+<style>
+  :root { --bg:#0b0b0b; --card:#161616; --line:#262626; --text:#f2f2f2; --muted:#a3a3a3; --green:#2e9e44; --gold:#f2c230; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f4f4f2; --card:#ffffff; --line:#e3e3e0; --text:#141414; --muted:#5d5d5d; --gold:#9a7200; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.5 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
+  .banner { background:#000; text-align:center; }
+  .banner img { width:100%; max-width:760px; display:block; margin:0 auto; }
+  main { max-width:680px; margin:0 auto; padding:16px 16px 40px; }
+  h1 { font-size:26px; margin:8px 0 2px; }
+  .by { color:var(--muted); margin:0 0 16px; font-size:14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin:12px 0; }
+  .card h2 { font-size:13px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); margin:0 0 8px; }
+  ul, ol { margin:0; padding-left:20px; }
+  li { margin:4px 0; }
+  a { color:var(--green); }
+  .muted { color:var(--muted); font-size:14px; }
+  .kofi { display:block; text-align:center; padding:12px; border-radius:10px; background:#FF5E5B; color:#fff; text-decoration:none; font-weight:600; margin:12px 0; }
+  .legal { color:var(--muted); font-size:12px; line-height:1.45; margin-top:18px; }
+  code { background:var(--card); border:1px solid var(--line); border-radius:5px; padding:1px 5px; font-size:13px; }
+</style>
+</head>
+<body>
+  <div class="banner"><img src="../assets/silencedhomebutton-banner.png" alt="Amirii's Customs"></div>
+  <main>
+    <h1>Silenced Home Button</h1>
+    <p class="by">by Amirii's Customs&trade; &middot; version 1.0.1</p>
+
+    <div class="card">
+      <p style="margin:0">Mutes the Touch ID home-button <b>click haptic</b>. For an iPhone with a solid-state home button whose Taptic Engine rattles, buzzes or is damaged &mdash; the button still works and Touch ID is unaffected, only the buzz is removed.</p>
+    </div>
+
+    <div class="card">
+      <h2>How to use</h2>
+      <ol>
+        <li>Install, then <b>respring / userspace reboot</b> so it loads.</li>
+        <li><b>Settings &rarr; Silenced Home Button &rarr; On.</b></li>
+        <li>Tap the blue <b>Respring</b> button (top right) to apply.</li>
+      </ol>
+      <p class="muted">Off by default &mdash; installing changes nothing until you switch it on. Turn it off and respring to bring the click back.</p>
+    </div>
+
+    <div class="card">
+      <h2>How it works</h2>
+      <p style="margin:0">The home-button click is a Taptic actuation that <code>backboardd</code> loads from a haptic config. This tweak sets that click's <b>gain to zero</b>, so the button keeps a configured haptic (iOS never disables it) but the engine actuates at zero amplitude &mdash; silent. Nothing else is touched.</p>
+    </div>
+
+    <div class="card">
+      <h2>Compatibility</h2>
+      <ul>
+        <li>Solid-state home-button devices: <b>iPhone 7, 7 Plus, 8, 8 Plus, SE 2nd gen, SE 3rd gen</b>.</li>
+        <li><b>Tested:</b> iPhone 8 Plus, iOS 16.7, palera1n.</li>
+        <li><b>Rootless</b> (iOS 15+) and <b>rootful</b> (iOS 10-14) packages, arm64 + arm64e.</li>
+        <li>Other versions are expected to work but untested &mdash; please report.</li>
+      </ul>
+    </div>
+
+    <a class="kofi" href="https://ko-fi.com/amiriiscustoms">&#9749; Support Amirii's Customs on Ko-fi</a>
+
+    <p class="legal">Silenced Home Button&trade; and Amirii&#39;s Customs&trade; are trademarks of Amirii&#39;s Customs. &copy; 2026 Amirii&#39;s Customs. All rights reserved. Free for personal use; redistribution or modification is not permitted. Not affiliated with Apple Inc. Apple, iPhone, iOS and Touch ID are trademarks of Apple Inc. <a href="../licenses/silencedhomebutton.txt">License</a></p>
+  </main>
+</body>
+</html>

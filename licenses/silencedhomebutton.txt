@@ -1,0 +1,61 @@
+Silenced Home Button — Software License
+Copyright (c) 2026 Amirii's Customs™. All rights reserved.
+
+1. Ownership
+   This software, including its source code, compiled packages (.deb files),
+   preference bundle, artwork, logos, icons, screenshots and package pages
+   (together, the "Software"), is owned by Amirii's Customs and is protected
+   by copyright law. "Silenced Home Button" and "Amirii's Customs" and their logos are
+   trademarks of Amirii's Customs.
+
+2. What you may do
+   You may download, install and use the Software free of charge on devices
+   you own or control, for personal, non-commercial use, when obtained from
+   the official repository:
+   https://amiriiscustoms.github.io/tweaks/
+
+3. What you may not do (without prior written permission)
+   a. Copy, re-upload, mirror or redistribute the Software or any part of it,
+      including hosting the .deb files on another repository or website.
+   b. Modify, translate, adapt or create derivative works of the Software.
+   c. Decompile, disassemble or reverse engineer the Software, except to the
+      extent applicable law expressly permits this despite this restriction.
+   d. Sell, rent, sublicense or otherwise commercially exploit the Software,
+      or bundle it with other products or services.
+   e. Remove or alter any copyright, trademark or license notices.
+   f. Use the Silenced Home Button or Amirii's Customs names or logos in a way that
+      suggests your product is made, endorsed or approved by Amirii's Customs.
+
+4. Donations
+   Donations (for example through https://ko-fi.com/amiriiscustoms) are
+   voluntary gifts. They do not purchase a license, ownership, support or any
+   additional rights.
+
+5. No warranty
+   The Software is provided "AS IS", without warranty of any kind, express or
+   implied, including fitness for a particular purpose and non-infringement.
+   Jailbreaking and modifying iOS carries risk. You use the Software at your
+   own risk.
+
+6. Limitation of liability
+   To the maximum extent permitted by law, Amirii's Customs is not liable for
+   any damages arising from use of, or inability to use, the Software,
+   including loss of data, service interruptions, or issues with any Apple
+   account or device.
+
+7. Not affiliated with Apple
+   Silenced Home Button is an independent product and is not affiliated with, endorsed
+   by or sponsored by Apple Inc. Apple, iPhone, iPad, iMessage, FaceTime and
+   iOS are trademarks of Apple Inc., registered in the U.S. and other
+   countries.
+
+8. Termination
+   Your permission to use the Software ends automatically if you break these
+   terms. You must then stop using and delete the Software.
+
+9. Governing law
+   These terms are governed by the laws of the Province of Ontario and the
+   federal laws of Canada applicable there.
+
+For permissions or questions, contact Amirii's Customs through
+https://ko-fi.com/amiriiscustoms or the official repository.
