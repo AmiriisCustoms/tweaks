@@ -1,0 +1,190 @@
+{
+ "minVersion": "0.4",
+ "headerImage": "https://amiriiscustoms.github.io/tweaks/assets/banner.png",
+ "tintColor": "#2E9E44",
+ "class": "DepictionTabView",
+ "tabs": [
+  {
+   "tabname": "Details",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "**RelayBridge4iOS** turns a spare jailbroken iPhone into a Continuity relay device — like an iPad or Mac. Your main (non‑jailbroken) iPhone forwards **SMS** and **phone calls** to it, and iMessage keeps working normally.\n\n**Works**\n- Send & receive SMS (green bubble) through your main iPhone\n- Receive MMS picture texts\n- Make & receive phone calls through your main iPhone\n- iMessage and FaceTime, including photos\n\n**Not supported**\n- Sending MMS picture texts (send pictures over iMessage instead)\n- Moving a call that's already in progress from your main iPhone\n",
+     "useSpacing": true
+    },
+    {
+     "class": "DepictionButtonView",
+     "text": "☕ Support on Ko-fi",
+     "action": "https://ko-fi.com/amiriiscustoms",
+     "tintColor": "#FF5E5B"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Screenshots"
+    },
+    {
+     "class": "DepictionScreenshotsView",
+     "itemCornerRadius": 8,
+     "itemSize": "{160, 194}",
+     "screenshots": [
+      {
+       "url": "https://amiriiscustoms.github.io/tweaks/assets/screenshot-settings.png",
+       "accessibilityText": "RelayBridge4iOS settings"
+      }
+     ]
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Setup"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "1. Remove the SIM from the jailbroken iPhone.\n2. Install RelayBridge4iOS.\n3. Settings → Messages: turn iMessage off, then on.\n4. Settings → FaceTime: turn FaceTime off, then on (same Apple ID as your main iPhone).\n5. On your main iPhone: Settings → Messages → Text Message Forwarding → turn on this iPhone, and Settings → Phone → Calls on Other Devices → Allow → turn on this iPhone.\n\nSettings → RelayBridge4iOS has an on/off switch and a Restart Relay Services button.\n\n**Optional (beta):** once this iPhone shows up under Text Message Forwarding on your main iPhone, turn on **AirDrop Fix** in Settings → RelayBridge4iOS.",
+     "useSpacing": true
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Privacy & Security"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "- **No network access.** RelayBridge4iOS never connects to the internet, sends data anywhere, or reads your IP address, MAC address or other network info.\n- **No personal data in the package or source.** No names, emails, device identifiers or file paths. Packages are built on GitHub's servers from the public source.\n- **Apple's encryption is unchanged.** RelayBridge4iOS only answers one question differently inside a few Messages and Phone processes: \"Does this device have cellular?\" It answers \"no\", like an iPad. SMS and call relay still go through Apple's own end-to-end encrypted Continuity connection. RelayBridge4iOS never sees message content, call audio or encryption keys.\n- **No one else gets new information.** Apple sees the same kinds of things it sees from any of your devices; nobody else sees anything.\n- **Debug logs stay on your phone,** are off by default, are never uploaded, and show device identifiers as `<redacted>`.\n\n**Keep your jailbroken phone secure:** set a passcode (it receives your texts and calls), change the default SSH passwords (`passwd` and `passwd mobile` as root), and only install tweaks you trust.",
+     "useSpacing": true
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Compatibility"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "- **Tested:** iPhone 8 Plus, iOS 16.7.15, palera1n (rootless)\n- **Rootless package, iOS 15 – 26.0.1:** palera1n, Dopamine. Untested beyond the iPhone above; please report.\n- **Rootful package, iOS 8.1 – 14.x:** Cydia-era jailbreaks, unc0ver, checkra1n, Taurine, Odyssey, palera1n rootful. Includes 32-bit iPhone 4S/5/5c. Untested; please report.\n- **Not supported:** iOS below 8.1 (no Text Message Forwarding), iPhone XS/XR/11 on iOS 12–13, roothide jailbreaks (for now).\n- The jailbroken iPhone must have **no SIM** and use the **same Apple ID** as your main iPhone.\n- Calls relay only when both phones are on the **same Wi-Fi**. Texts relay anywhere.",
+     "useSpacing": true
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Developer",
+     "text": "Amirii's Customs™"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Version",
+     "text": "1.2.5 beta 3"
+    },
+    {
+     "class": "DepictionTableButtonView",
+     "title": "GitHub",
+     "action": "https://github.com/AmiriisCustoms/tweaks"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionLabelView",
+     "text": "RelayBridge™ and Amirii's Customs™ are trademarks of Amirii's Customs. © 2026 Amirii's Customs. All rights reserved. Free for personal use; redistribution or modification is not permitted. Not affiliated with Apple Inc. Apple, iPhone, iMessage, FaceTime and iOS are trademarks of Apple Inc.",
+     "fontSize": 12,
+     "textColor": "#8e8e93",
+     "margins": "{8,16,8,16}"
+    },
+    {
+     "class": "DepictionTableButtonView",
+     "title": "License",
+     "action": "https://amiriiscustoms.github.io/tweaks/LICENSE.txt"
+    }
+   ]
+  },
+  {
+   "tabname": "Changelog",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.2.5 beta 3",
+     "useBoldText": true
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "**Beta.** Now built for **iOS 8.1 through 26.0.1**:\n\n- New rootful package for iOS 8.1 – 14, including 32-bit iPhones (4S, 5, 5c).\n- Rootless package covers iOS 15 – 26.0.1.\n- Fixed a likely hooking problem on iPhone XS and newer (A12 and later chips).\n- On very old jailbreaks without `killall`, the installer asks you to reboot instead of failing.\n\nOnly iOS 16 has been tested so far. If you try another version, please report what works."
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.2.5 beta 1",
+     "useBoldText": true
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "**Beta.** New *Beta Options* in Settings → RelayBridge4iOS, both off by default:\n\n- **AirDrop Fix:** stops RelayBridge from interfering with AirDrop receiving. Turn it on after this iPhone appears under Text Message Forwarding on your main iPhone. If texts or calls stop relaying, turn it off.\n- **Call Handoff (Experimental):** your main iPhone can move a call in progress to this iPhone. Known issues: moved calls can sound distant on speaker, and a move can occasionally fail and return to the main iPhone.\n\nAlso: terminal commands `relaybridge airdropfix on|off` and `relaybridge handoff on|off`. Settings reset to defaults on this update."
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.2.4",
+     "useBoldText": true
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "License and trademark notices in Settings and the package."
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.2.3",
+     "useBoldText": true
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Renamed to RelayBridge4iOS."
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.2.2",
+     "useBoldText": true
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Rootful (iOS 14) beta build, arm64e support for A12+ devices, repo icons and package page."
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.2.1",
+     "useBoldText": true
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Privacy: debug logs never record device identifiers and are off by default; old logs are deleted on install."
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.2.0",
+     "useBoldText": true
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Fixed iMessage photos. Fewer changes to how the phone identifies itself."
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.0.0",
+     "useBoldText": true
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Settings page, enabled automatically on install, clean uninstall."
+    }
+   ]
+  }
+ ]
+}

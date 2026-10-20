@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RelayBridge4iOS</title>
+<style>
+  :root { --bg:#0b0b0b; --card:#161616; --line:#262626; --text:#f2f2f2; --muted:#a3a3a3; --green:#2e9e44; --gold:#f2c230; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f4f4f2; --card:#ffffff; --line:#e3e3e0; --text:#141414; --muted:#5d5d5d; --gold:#9a7200; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.5 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
+  .banner { background:#000; text-align:center; }
+  .banner img { width:100%; max-width:760px; display:block; margin:0 auto; }
+  main { max-width:680px; margin:0 auto; padding:16px 16px 40px; }
+  h1 { font-size:26px; margin:8px 0 2px; }
+  .by { color:var(--muted); margin:0 0 16px; font-size:14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin:12px 0; }
+  .card h2 { font-size:13px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); margin:0 0 8px; }
+  ul, ol { margin:0; padding-left:20px; }
+  li { margin:4px 0; }
+  .ok li::marker { color:var(--green); }
+  .no li::marker { color:#d9534f; }
+  .shot { display:block; width:100%; max-width:300px; border-radius:10px; border:1px solid var(--line); margin:4px auto 0; }
+  .log b { color:var(--green); }
+  .log p { margin:6px 0; }
+  a { color:var(--green); }
+  .muted { color:var(--muted); font-size:14px; }
+  .kofi { display:block; text-align:center; padding:12px; border-radius:10px; background:#FF5E5B; color:#fff; text-decoration:none; font-weight:600; margin:12px 0; }
+  .legal { color:var(--muted); font-size:12px; line-height:1.45; margin-top:18px; }
+</style>
+</head>
+<body>
+  <div class="banner"><img src="../assets/banner.png" alt="Amirii's Customs"></div>
+  <main>
+    <h1>RelayBridge4iOS</h1>
+    <p class="by">by Amirii's Customs™ · version 1.2.5 beta 3</p>
+
+    <div class="card">
+      <p style="margin:0">Turns a spare jailbroken iPhone into a Continuity relay device, like an iPad or Mac. Your main iPhone forwards SMS and phone calls to it, and iMessage keeps working normally.</p>
+    </div>
+
+    <a class="kofi" href="https://ko-fi.com/amiriiscustoms">☕ Support on Ko-fi</a>
+    <p class="muted" style="text-align:center;margin-top:-4px">RelayBridge4iOS is free. Donations are optional and help fund testing on more devices.</p>
+
+    <div class="card">
+      <h2>Works</h2>
+      <ul class="ok">
+        <li>Send and receive SMS (green bubble) through your main iPhone</li>
+        <li>Receive MMS picture texts</li>
+        <li>Make and receive phone calls through your main iPhone</li>
+        <li>iMessage and FaceTime, including photos</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Not supported</h2>
+      <ul class="no">
+        <li>Sending MMS picture texts (send pictures over iMessage instead)</li>
+        <li>Moving a call in progress from your main iPhone is experimental (Call Handoff switch, beta)</li>
+        <li>Calls relay only when both phones are on the same Wi-Fi (texts relay anywhere)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Setup</h2>
+      <ol>
+        <li>Remove the SIM from the jailbroken iPhone.</li>
+        <li>Install RelayBridge4iOS.</li>
+        <li>Settings → Messages: turn iMessage off, then on.</li>
+        <li>Settings → FaceTime: turn FaceTime off, then on (same Apple ID as your main iPhone).</li>
+        <li>On your main iPhone: Messages → Text Message Forwarding → turn on this iPhone, and Phone → Calls on Other Devices → Allow → turn on this iPhone.</li>
+        <li>Optional (beta): Settings → RelayBridge4iOS → turn on <b>AirDrop Fix</b>.</li>
+      </ol>
+      <img class="shot" src="../assets/screenshot-settings.png" alt="RelayBridge4iOS settings page">
+    </div>
+
+    <div class="card">
+      <h2>Privacy &amp; security</h2>
+      <ul>
+        <li><b>No network access.</b> RelayBridge4iOS never connects to the internet, sends data anywhere, or reads your IP address, MAC address or other network info.</li>
+        <li><b>No personal data in the package or source.</b> No names, emails, device identifiers or file paths. Packages are built on GitHub's servers from the public source.</li>
+        <li><b>Apple's encryption is unchanged.</b> It only answers one question differently inside a few Messages and Phone processes: "Does this device have cellular?" It answers "no", like an iPad. SMS and call relay still use Apple's end-to-end encrypted Continuity connection. RelayBridge4iOS never sees message content, call audio or encryption keys.</li>
+        <li><b>No one else gets new information.</b> Apple sees the same kinds of things it sees from any of your devices; nobody else sees anything.</li>
+        <li><b>Debug logs stay on your phone,</b> are off by default, are never uploaded, and show device identifiers as &lt;redacted&gt;.</li>
+      </ul>
+      <p class="muted">Keep your jailbroken phone secure: set a passcode, change the default SSH passwords (<code>passwd</code> and <code>passwd mobile</code> as root), and only install tweaks you trust.</p>
+    </div>
+
+    <div class="card">
+      <h2>Compatibility</h2>
+      <ul>
+        <li><b>Tested:</b> iPhone 8 Plus, iOS 16.7.15, palera1n (rootless)</li>
+        <li><b>Rootless package, iOS 15 – 26.0.1:</b> palera1n, Dopamine. Untested beyond the iPhone above; please report.</li>
+        <li><b>Rootful package, iOS 8.1 – 14.x:</b> Cydia-era jailbreaks, unc0ver, checkra1n, Taurine, Odyssey, palera1n rootful. Includes 32-bit iPhone 4S/5/5c. Untested; please report.</li>
+        <li><b>Not supported:</b> iOS below 8.1 (no Text Message Forwarding), iPhone XS/XR/11 on iOS 12–13, roothide jailbreaks (for now).</li>
+      </ul>
+      <p class="muted">The jailbroken iPhone must have no SIM and use the same Apple ID as your main iPhone.</p>
+    </div>
+
+    <div class="card log">
+      <h2>Changelog</h2>
+      <p><b>1.2.5 beta 3</b> Now built for iOS 8.1 through 26.0.1: new rootful package for iOS 8.1 – 14 (including 32-bit iPhone 4S/5/5c), rootless package for iOS 15 – 26.0.1. Fixed a likely hooking problem on iPhone XS and newer. Very old jailbreaks without <code>killall</code> get a reboot prompt instead of a failed install. Only iOS 16 has been tested so far; please report other versions.</p>
+      <p><b>1.2.5 beta 1</b> New Beta Options in Settings, both off by default. <b>AirDrop Fix</b> stops RelayBridge from interfering with AirDrop receiving (turn on after this iPhone appears under Text Message Forwarding). <b>Call Handoff (Experimental)</b> lets your main iPhone move a call to this iPhone; moved calls can sound distant on speaker. New terminal commands <code>relaybridge airdropfix on|off</code> and <code>relaybridge handoff on|off</code>.</p>
+      <p><b>1.2.4</b> License and trademark notices in Settings and the package.</p>
+      <p><b>1.2.3</b> Renamed to RelayBridge4iOS.</p>
+      <p><b>1.2.2</b> Rootful (iOS 14) beta build, arm64e support for A12+ devices, repo icons and package page.</p>
+      <p><b>1.2.1</b> Debug logs never record device identifiers and are off by default. Old logs are deleted on install.</p>
+      <p><b>1.2.0</b> Fixed iMessage photos. Fewer changes to how the phone identifies itself.</p>
+      <p><b>1.0.0</b> Settings page, enabled automatically on install, clean uninstall.</p>
+    </div>
+
+    <p class="muted">GitHub: <a href="https://github.com/AmiriisCustoms/tweaks">github.com/AmiriisCustoms/tweaks</a></p>
+    <p class="legal">RelayBridge™ and Amirii&#39;s Customs™ are trademarks of Amirii&#39;s Customs. © 2026 Amirii&#39;s Customs. All rights reserved. Free for personal use; redistribution or modification is not permitted. Not affiliated with Apple Inc. Apple, iPhone, iMessage, FaceTime and iOS are trademarks of Apple Inc. <a href="../LICENSE.txt">License</a></p>
+  </main>
+</body>
+</html>

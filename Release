@@ -1,0 +1,19 @@
+Origin: Amirii's Customs
+Label: Amirii's Customs
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm iphoneos-arm64
+Components: main
+Description: Amirii's Customs jailbreak tweaks
+Date: Tue, 20 Oct 2026 20:16:57 UTC
+MD5Sum:
+ de273df81155404aa34bc9d265894af2 1926 Packages
+ 39d8b2aafaffd9c35f1db28401cebe32 698 Packages.gz
+ b49bf2508e9f80b59430489234e34a7a 851 Packages.bz2
+ 792bb7a2c33b879206daa75c59765f28 760 Packages.xz
+SHA256:
+ 221aed5a62ded5ec1a06db14e7589811e8f0374fcf9e1abd596f2a1435040ca4 1926 Packages
+ ccbe5714dd40c40cfa6d958a184cb472bba506359e8fa18c23a7584774f22b7a 698 Packages.gz
+ d7fdbe523e31bf6723c919d35481391dd513abcaa66f29f98388bb7351f4602d 851 Packages.bz2
+ 179bf88137dbbf500036a650f4fa75836c824094513964fd7e18f111410e69b7 760 Packages.xz

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amirii's Customs Repo</title>
+<link rel="icon" href="CydiaIcon.png">
+<!-- SHARED FILE: keep identical in every Amirii's Customs tweak source repo
+     (RelayBridge, Silenced Home Button, ...). Add new tweaks to the Packages list. -->
+<style>
+  :root { --bg:#0b0b0b; --card:#161616; --line:#262626; --text:#f2f2f2; --muted:#a3a3a3; --green:#2e9e44; --gold:#f2c230; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f4f4f2; --card:#ffffff; --line:#e3e3e0; --text:#141414; --muted:#5d5d5d; --gold:#9a7200; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.5 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
+  .banner { background:#000; }
+  .banner img { width:100%; max-width:760px; display:block; margin:0 auto; }
+  main { max-width:680px; margin:0 auto; padding:16px 16px 40px; }
+  h1 { font-size:24px; margin:8px 0 4px; }
+  p { margin:6px 0; }
+  .url { font-family:ui-monospace, Menlo, monospace; background:var(--card); border:1px solid var(--line); border-radius:8px; padding:10px 12px; word-break:break-all; margin:12px 0; }
+  .buttons { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:10px; margin:14px 0 22px; }
+  .buttons a { display:block; text-align:center; padding:12px; border-radius:10px; background:var(--green); color:#fff; text-decoration:none; font-weight:600; }
+  .pkgs { display:grid; gap:10px; }
+  .pkg { display:flex; gap:12px; align-items:center; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px; text-decoration:none; color:inherit; }
+  .pkg img { width:56px; height:56px; border-radius:12px; flex:none; }
+  .pkg small { color:var(--muted); display:block; }
+  h2 { font-size:13px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); margin:18px 0 8px; }
+  .kofi { display:block; text-align:center; padding:12px; border-radius:10px; background:#FF5E5B; color:#fff; text-decoration:none; font-weight:600; margin:18px 0 0; }
+  .legal { color:var(--muted); font-size:12px; line-height:1.45; margin-top:22px; }
+</style>
+</head>
+<body>
+  <div class="banner"><img src="assets/banner.png" alt="Amirii's Customs"></div>
+  <main>
+    <h1>Amirii's Customs Repo</h1>
+    <p>Add this source once &mdash; every Amirii's Customs tweak shows up here, including new ones.</p>
+    <div class="url">https://amiriiscustoms.github.io/tweaks/</div>
+    <div class="buttons">
+      <a href="sileo://source/https://amiriiscustoms.github.io/tweaks/">Add to Sileo</a>
+      <a href="zbra://sources/add/https://amiriiscustoms.github.io/tweaks/">Add to Zebra</a>
+      <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://amiriiscustoms.github.io/tweaks/">Add to Cydia</a>
+    </div>
+    <h2>Packages</h2>
+    <div class="pkgs">
+      <a class="pkg" href="depictions/relaybridge.html">
+        <img src="assets/icon.png" alt="">
+        <span><b>RelayBridge4iOS</b><small>Use a spare jailbroken iPhone as a relay device for SMS and calls</small></span>
+      </a>
+      <a class="pkg" href="depictions/silencedhomebutton.html">
+        <img src="assets/silencedhomebutton-icon.png" alt="">
+        <span><b>Silenced Home Button</b><small>Mute the Touch ID home-button click haptic (iPhone 7/8/SE)</small></span>
+      </a>
+    </div>
+    <a class="kofi" href="https://ko-fi.com/amiriiscustoms">&#9749; Support Amirii's Customs on Ko-fi</a>
+    <p class="legal">RelayBridge&trade;, Silenced Home Button&trade; and Amirii&#39;s Customs&trade; are trademarks of Amirii&#39;s Customs. &copy; 2026 Amirii&#39;s Customs. All rights reserved. Free for personal use; redistribution or modification is not permitted. Not affiliated with Apple Inc. Apple, iPhone, iMessage, FaceTime, iOS and Touch ID are trademarks of Apple Inc. Licenses: <a href="LICENSE.txt">RelayBridge</a> &middot; <a href="licenses/silencedhomebutton.txt">Silenced Home Button</a></p>
+  </main>
+</body>
+</html>

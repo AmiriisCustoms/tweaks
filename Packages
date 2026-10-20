@@ -1,0 +1,39 @@
+Package: com.amirii.relaybridge
+Name: RelayBridge4iOS
+Version: 1.2.5~beta3
+Architecture: iphoneos-arm
+Description: Use this iPhone as a Continuity relay device: send and receive SMS and calls through your main iPhone, like an iPad or Mac. Toggle in Settings > RelayBridge4iOS.
+Maintainer: Amirii's Customs
+Author: Amirii's Customs
+Section: Tweaks
+Icon: https://amiriiscustoms.github.io/tweaks/assets/icon.png
+Depiction: https://amiriiscustoms.github.io/tweaks/depictions/relaybridge.html
+SileoDepiction: https://amiriiscustoms.github.io/tweaks/depictions/relaybridge.json
+Homepage: https://github.com/AmiriisCustoms/tweaks
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 8.1)
+Installed-Size: 664
+Filename: debs/com.amirii.relaybridge_1.2.5~beta3_iphoneos-arm.deb
+Size: 237474
+MD5sum: 4d4b7643cc9ecca9c500c501630b383a
+SHA1: 2791a32d8135bab0f2075355f4b59a609e3ed7e4
+SHA256: ed8b45ac012ba054765b64dc040982de9daa7388a358765653e8813aee1d616c
+
+Package: com.amirii.relaybridge
+Name: RelayBridge4iOS
+Description: Use this iPhone as a Continuity relay device: send and receive SMS and calls through your main iPhone, like an iPad or Mac. Toggle in Settings > RelayBridge4iOS.
+Maintainer: Amirii's Customs
+Author: Amirii's Customs
+Section: Tweaks
+Icon: https://amiriiscustoms.github.io/tweaks/assets/icon.png
+Depiction: https://amiriiscustoms.github.io/tweaks/depictions/relaybridge.html
+SileoDepiction: https://amiriiscustoms.github.io/tweaks/depictions/relaybridge.json
+Homepage: https://github.com/AmiriisCustoms/tweaks
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 15.0)
+Architecture: iphoneos-arm64
+Version: 1.2.5~beta3
+Installed-Size: 556
+Filename: debs/com.amirii.relaybridge_1.2.5~beta3_iphoneos-arm64.deb
+Size: 210876
+MD5sum: 252d1876d4c38eba3ce61f3c5ecfef8b
+SHA1: ba2231ac255eac671f42dd1467a1545fbf15233b
+SHA256: 8f7bf3bbfa5276f8243ada3349943edcf1f0d0c6a6e45eb8ffc3f04d953f981a
