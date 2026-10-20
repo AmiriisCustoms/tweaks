@@ -13,10 +13,10 @@ Homepage: https://github.com/AmiriisCustoms/tweaks
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 8.1)
 Installed-Size: 664
 Filename: debs/com.amirii.relaybridge_1.2.5~beta3_iphoneos-arm.deb
-Size: 237462
-MD5sum: 015b5f33ff51d213ad019ba9adfd9b70
-SHA1: ad9ec15ee395e2d034a58342c147f4c02231cdd0
-SHA256: 7bf551a4cec6c5bb3b0f7c2d71d209309f85105999ab065ffd226800543513dc
+Size: 237476
+MD5sum: 8565c6bad15e2c8358d358b972152cce
+SHA1: 08f54e69a6505248b22c8e7ffa998d6d5ef91443
+SHA256: 92f890fca0869bec9587197da3c21d103445529289e00653ee9fae971b13ac17
 
 Package: com.amirii.relaybridge
 Name: RelayBridge4iOS
@@ -33,10 +33,10 @@ Architecture: iphoneos-arm64
 Version: 1.2.5~beta3
 Installed-Size: 556
 Filename: debs/com.amirii.relaybridge_1.2.5~beta3_iphoneos-arm64.deb
-Size: 210860
-MD5sum: 82856bfd417650a104b67c41efda94b1
-SHA1: a335c984500647c31491c24a3764cf9f3fb29ca6
-SHA256: f9ca0828ce11396ef98edd07626c0f1aeaf837363c769a88601bd43285a5ae08
+Size: 210870
+MD5sum: 6688dac81ab07e14004ced9f95b255a3
+SHA1: 124623259b0f09f474a868f9535d50db2f8d9f76
+SHA256: 325f1748e94b61a8695c5e24fd04e7d3faa518a9e4a98c997b8c6fdfbc64ee1f
 
 Package: com.amirii.silencedhomebutton
 Name: Silenced Home Button
